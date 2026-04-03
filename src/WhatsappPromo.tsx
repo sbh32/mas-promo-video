@@ -32,6 +32,9 @@ export const WhatsappPromo: React.FC = () => {
 						<div style={{ marginBottom: '20px', fontSize: '65px' }}>
 							Scan to join our <span style={{ color: MAS_GREEN }}>WhatsApp community!</span>
 						</div>
+						<div style={{ marginBottom: '15px', fontSize: '50px', color: MAS_GREEN, textTransform: 'uppercase', letterSpacing: '4px' }}>
+							Don’t miss out!
+						</div>
 						<div style={{ marginBottom: '40px', fontSize: '40px', fontWeight: 'normal' }}>
 							Stay up to date on all events and programs
 						</div>
