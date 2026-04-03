@@ -1,6 +1,5 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, Sequence, useCurrentFrame, useVideoConfig, Img, staticFile } from 'remotion';
-import QRCode from 'react-qr-code';
+import { AbsoluteFill, interpolate, Sequence, useCurrentFrame, Img, staticFile } from 'remotion';
 
 export const WhatsappPromo: React.FC = () => {
 	const MAS_BLUE = '#0c4f9e';
@@ -37,8 +36,7 @@ export const WhatsappPromo: React.FC = () => {
 							Stay up to date on all events and programs
 						</div>
 						<div style={{ background: 'white', padding: '20px', borderRadius: '20px', boxShadow: '0px 10px 40px rgba(0,0,0,0.5)' }}>
-							{/* Placeholder URL - user will need to update this */}
-							<QRCode value="https://chat.whatsapp.com/" size={350} bgColor="#FFFFFF" fgColor={MAS_BLUE} />
+							<Img src={staticFile("whatsapp-qr.png")} style={{ width: '350px', height: '350px', objectFit: 'contain' }} />
 						</div>
 					</AbsoluteFill>;
 				})()}
