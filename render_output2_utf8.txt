@@ -1,0 +1,90 @@
+﻿Bundling 6%
+Bundling 18%
+Bundling 60%
+Bundling 69%
+Bundling 74%
+Bundling 80%
+Bundling 85%
+Bundling 90%
+Bundling 95%
+Bundling 100%
+Getting composition
+
+node.exe : [31mError: 
+Unsupported architecture 
+on Windows: arm64[39m
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo       
+       : NotSpecified:   
+  ([31mError: Uns...o   
+ ws: arm64[39m:Strin    
+g) [], RemoteExcepti    
+on
+    + FullyQualifiedErro 
+   rId : NativeCommandE  
+  rror
+ 
+[31m    at 
+getExecutableDir (C:\User
+s\sbila\my-video\mas-prom
+o-video\node_modules\@rem
+otion\renderer\dist\compo
+sitor\get-executable-path
+.js:63:27)[39m
+[31m    at 
+getExecutablePath (C:\Use
+rs\sbila\my-video\mas-pro
+mo-video\node_modules\@re
+motion\renderer\dist\comp
+ositor\get-executable-pat
+h.js:34:128)[39m
+[31m    at 
+startCompositor (C:\Users
+\sbila\my-video\mas-promo
+-video\node_modules\@remo
+tion\renderer\dist\compos
+itor\compositor.js:32:61)
+[39m
+[31m    at startOffthrea
+dVideoServer (C:\Users\sb
+ila\my-video\mas-promo-vi
+deo\node_modules\@remotio
+n\renderer\dist\offthread
+-video-server.js:41:57)[
+39m
+[31m    at serveStatic (
+C:\Users\sbila\my-video\m
+as-promo-video\node_modul
+es\@remotion\renderer\dis
+t\serve-static.js:13:136)
+[39m
+[31m    at 
+Object.prepareServer (C:\
+Users\sbila\my-video\mas-
+promo-video\node_modules\
+@remotion\renderer\dist\p
+repare-server.js:71:91)[
+39m
+[31m    at 
+renderVideoFlow (C:\Users
+\sbila\my-video\mas-promo
+-video\node_modules\@remo
+tion\cli\dist\render-flow
+s\render.js:209:53)[39m
+[31m    at async render 
+(C:\Users\sbila\my-video\
+mas-promo-video\node_modu
+les\@remotion\cli\dist\re
+nder.js:168:5)[39m
+[31m    at async cli (C:
+\Users\sbila\my-video\mas
+-promo-video\node_modules
+\@remotion\cli\dist\index
+.js:98:13)[39m
