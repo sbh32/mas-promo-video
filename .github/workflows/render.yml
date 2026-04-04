@@ -1,32 +1,34 @@
-name: Render Video
+name: Render Remotion Video
+
 on:
   push:
-    branches: [ main, master ]
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
   render:
-    name: Render Video
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: 20
+          cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Render Mas Promo Video
-        run: npx remotion render src/index.ts MasPromo out/mas-promo-video.mp4
+      - name: Install Chrome
+        run: npx remotion browser ensure
 
-      - name: Render Whatsapp Promo Video
-        run: npx remotion render src/index.ts WhatsappPromo out/whatsapp-promo-video.mp4
+      - name: Render WhatsappPromo
+        run: npx remotion render WhatsappPromo out/WhatsappPromo.mp4
 
-      - name: Upload Video Artifacts
+      - name: Upload rendered video
         uses: actions/upload-artifact@v4
         with:
-          name: Rendered-Videos
-          path: out/*.mp4
+          name: WhatsappPromo
+          path: out/WhatsappPromo.mp4
+          retention-days: 7
